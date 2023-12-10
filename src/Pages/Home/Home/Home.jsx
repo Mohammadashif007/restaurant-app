@@ -1,7 +1,7 @@
 
 import Banner from "../Banner/Banner";
 import FeaturedFood from "../FeaturedFood/FeaturedFood";
-import Menu from "../Menu/Menu";
+import PopularMenu from "../PopularMenu/PopularMenu";
 
 const Home = () => {
     return (
@@ -9,8 +9,8 @@ const Home = () => {
             <Banner></Banner>
 
             <FeaturedFood></FeaturedFood>
+            <PopularMenu></PopularMenu>
 
-            <Menu></Menu>
         </div>
     );
 };

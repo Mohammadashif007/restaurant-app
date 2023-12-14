@@ -1,4 +1,4 @@
-
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import Banner from "../Banner/Banner";
 import Featured from "../Featured/Featured";
 import FeaturedFood from "../FeaturedFood/FeaturedFood";
@@ -7,13 +7,18 @@ import Testimonials from "../Testimonials/Testimonials";
 
 const Home = () => {
     return (
-        <div>
-            <Banner></Banner>
-            <FeaturedFood></FeaturedFood>
-            <PopularMenu></PopularMenu>
-            <Featured></Featured>
-            <Testimonials></Testimonials>
-        </div>
+        <HelmetProvider>
+            <div>
+                <Helmet>
+                    <title>Restaurant App || Home</title>
+                </Helmet>
+                <Banner></Banner>
+                <FeaturedFood></FeaturedFood>
+                <PopularMenu></PopularMenu>
+                <Featured></Featured>
+                <Testimonials></Testimonials>
+            </div>
+        </HelmetProvider>
     );
 };
 
